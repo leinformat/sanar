@@ -1,0 +1,91 @@
+
+.btn{
+	border-radius: 3px;
+	
+	display: inline-block;
+	padding: 8px 5px;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgb(1, 2, 48);
+	box-shadow: 0 1px 1px rgb(1, 2, 48); 
+	border-radius: 10px;
+
+}
+
+.btn-green{
+	font-family: "Calibri", serif ;
+	font: 100% sans-serif;
+	color: rgb(255, 255, 255);
+	background-color: rgb(1, 2, 48);
+}
+.btn-green:hover{
+	background-color: rgba(1, 2, 48, 0.795);
+}
+.btn-green:active{
+	background-color: rgba(1, 2, 48, 0.795);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*banner 2*/
+.banner-2{
+    display: grid;
+    grid-template-rows:10% auto 10% ;
+}
+.banner-2 h1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+	color: rgb(0, 0, 0);
+    text-align: center;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

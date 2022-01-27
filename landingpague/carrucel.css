@@ -1,0 +1,126 @@
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+	color: #fff;
+	font-size: 30px;
+}
+
+.contenedor-titulo-controles .indicadores button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+.peliculas-recomendadas .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda,
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	font-size: 30px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 20px;
+	color: rgb(238, 111, 8);
+	cursor: pointer;
+	background: transparent;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+
+
+.peliculas-recomendadas .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.peliculas-recomendadas .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+.peliculas-recomendadas .contenedor-carousel {
+	width: 100%;
+	padding: 25px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula {
+	min-width: 13%;/*tamaño de los productos*/
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula.hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .pelicula img {
+	width: 100%;
+	vertical-align: top;
+}
+
+/* ---- ----- ----- Media Queries ----- ----- ----- */
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.pelicula-principal {
+		font-size: 14px;
+	}
+
+	.pelicula-principal .descripcion {
+		max-width: 100%;
+	}
+
+	.peliculas-recomendadas .contenedor-carousel {
+		overflow: visible;
+	}
+
+	.peliculas-recomendadas .contenedor-carousel .carousel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.peliculas-recomendadas .indicadores,
+	.peliculas-recomendadas .flecha-izquierda,
+	.peliculas-recomendadas .flecha-derecha {
+		display: none;
+	}
+}
+
+
+.banner_8{
+	height: 10px;
+}

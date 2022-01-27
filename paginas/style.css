@@ -1,0 +1,57 @@
+#fh5co-home{
+  height: 550px;
+  width: 100% ;
+}
+
+#fh5co-testimonials{
+	margin-bottom: -100px;
+}
+
+#fh5co-about .fh5co-person figure img {
+  width: 120px;
+  border: 0px ;
+  -webkit-border-radius: 0%;
+  -moz-border-radius: 0%;
+  -ms-border-radius: 0%;
+  border-radius: 0%;
+}
+
+#fh5co-about .fh5co-person i{
+	color:#FC002E;
+}
+
+#fh5co-about .fh5co-person:hover{
+	color: #3E3F3C;
+	border-color: #FC002E;
+	-webkit-transition: 1s;
+  -o-transition: 1s;
+     transition: 1s;
+}
+#fh5co-about .fh5co-person h3{
+	margin-bottom: 30px;
+}
+
+@media screen and (max-width:480px) {
+
+  #fh5co-home{
+	  height: 200px;
+	  width: 100% ;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  #fh5co-home{
+	  height: 300px;
+	  width: 100% ;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1228px)
+{
+
+  #fh5co-home{
+	  height: 400px;
+	  width: 100% ;
+	}
+}
